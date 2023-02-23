@@ -37,7 +37,7 @@ class InvoiceListController extends Controller
         $this->invoiceList          = $invoiceList;
         $this->service              = $service;
         $this->customer             = $customer;
-        $this->seller             = $seller;
+        $this->seller               = $seller;
     }
     public function index(){
         try{
