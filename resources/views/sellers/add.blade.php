@@ -62,15 +62,15 @@
             </div>
             <div class="col-4">
                 <label for="">LUT No.</label>
-                <input type="number" name="lut" class="form-control" placeholder="LUT No." value="{{ old('lut', isset($seller->lut) ? $seller->lut : '' ) }}">
+                <input type="text" name="lut" class="form-control" placeholder="LUT No." value="{{ old('lut', isset($seller->lut) ? $seller->lut : '' ) }}">
             </div>
             <div class="col-4">
                 <label for="">GST No.</label>
-                <input type="number" name="gst" class="form-control" placeholder="GST No." value="{{ old('gst', isset($seller->gst) ? $seller->gst : '' ) }}">
+                <input type="text" name="gst" class="form-control" placeholder="GST No." value="{{ old('gst', isset($seller->gst) ? $seller->gst : '' ) }}">
             </div>
             <div class="col-4">
                 <label for="">Due Days<?php echo $reqLabel; ?></label>
-                <input type="number" name="due_day" class="form-control" placeholder="Due Day" value="{{ old('due_day', isset($seller->due_day) ? $seller->due_day : '' ) }}">
+                <input type="number" min ="1" name="due_day" class="form-control" placeholder="Due Day" value="{{ old('due_day', isset($seller->due_day) ? $seller->due_day : '' ) }}">
             </div>
             <div class="col-6">
                 <label for="exampleInputEmail1">Notes</label>

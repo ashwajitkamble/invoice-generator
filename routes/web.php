@@ -29,7 +29,7 @@ Route::get('/role', [App\Http\Controllers\RoleController::class, 'index'])->name
 Route::get('/role-add', [App\Http\Controllers\RoleController::class, 'add'])->name('role-add')->middleware('can:role-add');
 Route::match(['get', 'post'], '/role-edit/{id?}',[App\Http\Controllers\RoleController::class, 'add'])->name('role-edit')->middleware('can:role-edit');
 //profile
-Route::get('/profile', [App\Http\Controllers\UserController::class, 'profile'])->name('profile')->middleware('can:profile');
+Route::get('/profile', [App\Http\Controllers\UserController::class, 'profile'])->name('profile');
 //seller
 Route::get('/seller', [App\Http\Controllers\SellerController::class, 'index'])->name('seller')->middleware('can:seller');
 Route::get('/seller-add', [App\Http\Controllers\SellerController::class, 'add'])->name('seller-add')->middleware('can:seller-add');

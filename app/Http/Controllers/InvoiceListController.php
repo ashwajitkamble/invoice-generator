@@ -86,7 +86,7 @@ class InvoiceListController extends Controller
                             $value['invoice_id'] = $saveServ['id'];
                             if($this->service->saveServices($this->service, $value)){
                                 //Session::flash('success', $sucMsg);
-                                //
+                                
                                 //return redirect()->route('invoice');
                             }
                         }
@@ -152,7 +152,7 @@ class InvoiceListController extends Controller
             $customer = new Party([
                 'name'          => $customerDetails->name,
                 'custom_fields' => [
-                    'email'         => $customerDetails->email,
+                    'email'     => $customerDetails->email,
                 ],
                 
             ]);
@@ -237,7 +237,7 @@ class InvoiceListController extends Controller
             $customer = new Party([
                 'name'    => $customerDetails->name,
                 'custom_fields' => [
-                    'email'         => $customerDetails->email,
+                    'email'     => $customerDetails->email,
                 ],
             ]);
             //service
